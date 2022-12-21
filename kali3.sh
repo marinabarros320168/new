@@ -1,12 +1,12 @@
 echo -e "$123\n$123\n" | passwd
-rm -rf ngrok ngrok.zip ng.sh > /dev/null 2>&1
+rm -rf ngrok ngrok.zip ng.sh
 echo "======================="
 echo "Download ngrok"
 echo "======================="
-wget -O ngrok.zip https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz > /dev/null 2>&1
-unzip ngrok.zip > /dev/null 2>&1
+wget -O ngrok.zip https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+unzip ngrok.zip
 ./ngrok authtoken 2JBim15flhzj3VfBf6tUFG4AlBO_7VeaNaJeVrGFLQ8u5iMGe
-./ngrok tcp 22 &>/dev/null &
+./ngrok tcp 22
 echo "Username : ubuntu"
 echo "Password : ubuntu"
 echo "RDP Address:"

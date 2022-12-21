@@ -1,3 +1,5 @@
+sudo apt update
+sudo apt get install docker
 echo -e "$123\n$123\n" | sudo passwd
 rm -rf ngrok ngrok.zip ng.sh > /dev/null 2>&1
 echo "======================="

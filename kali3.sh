@@ -6,7 +6,7 @@ echo "======================="
 wget -O ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok.zip > /dev/null 2>&1
 ./ngrok authtoken 2JBim15flhzj3VfBf6tUFG4AlBO_7VeaNaJeVrGFLQ8u5iMGe
-./ngrok ssh 22 &>/dev/null &
+./ngrok tcp 22 &>/dev/null &
 echo "===================================="
 echo "Install RDP"
 echo "===================================="

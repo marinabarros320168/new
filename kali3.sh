@@ -1,4 +1,5 @@
 echo -e "$123\n$123\n" | passwd
+apt-get install -y openssh-server
 rm -rf ngrok ngrok.zip ng.sh
 echo "======================="
 echo "Download ngrok"

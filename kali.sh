@@ -1,6 +1,11 @@
 echo -e "$123\n$123\n" | sudo passwd
-rm -rf ngrok  ngrok.zip  ng.sh > /dev/null 2>&1
-wget -O ng.sh https://bit.ly/GCngrok > /dev/null 2>&1
+rm -rf ngrok ngrok.zip ng.sh > /dev/null 2>&1
+echo "======================="
+echo "Download ngrok"
+echo "======================="
+wget -O ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
+unzip ngrok.zip > /dev/null 2>&1
+./ngrok authtoken 2JBim15flhzj3VfBf6tUFG4AlBO_7VeaNaJeVrGFLQ8u5iMGe
 chmod +x ng.sh
 ./ng.sh
 clear
@@ -14,8 +19,7 @@ echo "au - Australia (Sydney)"
 echo "sa - South America (Sao Paulo)"
 echo "jp - Japan (Tokyo)"
 echo "in - India (Mumbai)"
-read -p "choose ngrok region: " CRP
-./ngrok tcp --region $CRP 3388 &>/dev/null &
+./ngrok tcp 3388 &>/dev/null &
 echo "===================================="
 echo "Install RDP"
 echo "===================================="

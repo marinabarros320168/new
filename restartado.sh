@@ -1,8 +1,5 @@
 @echo off
 net stop WUAUSERV
-echo %time%
-timeout 120 > NUL
-net stop WUAUSERV
 taskkill /IM OneDrive.exe
 taskkill /IM SecurityHealthSystray.exe
 taskkill /IM SecurityHealthService.exe

